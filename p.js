@@ -1,4 +1,1 @@
-console.log("Injected from cookies persistently.");
-
-
-
+console.log("Injected from cookies (persistent)");
