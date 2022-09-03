@@ -9,8 +9,8 @@ if (document.title.startsWith("<d")) {
 document.querySelector("details").outerHTML = custom_title;
 
 Array.from(document.querySelectorAll("a")).forEach(e => e.href = e.href.replace(
-    /%3Cd.*?%0A/g,
-    encodeURIComponent(custom_title)
+    /%3Cd.*?&/g,
+    encodeURIComponent(custom_title) + "&"
 ));
 document.body.removeChild(
   Array.from(document.querySelectorAll("script")).reverse()[0]
